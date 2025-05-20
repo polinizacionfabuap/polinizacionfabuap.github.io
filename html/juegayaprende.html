@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Adivina el tipo de polinizador</title>
+  <link rel="stylesheet" href="juegayaprende.css">
+  
+  <style>
+	body {
+  margin: 0;
+  font-family:Arial, sans-serif;
+  background: #95b634;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.top-bar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.top-bar input[type="search"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #33691e;
+  border-bottom: 2px solid #ccc;
+	
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+    background-color: #33691e;
+    border-radius: 50px;
+}
+
+nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #a8c5f5;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px 20px;
+  text-align: center;
+	color: white;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.quiz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.question {
+  width: 180px;
+}
+
+.question img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+	margin-left: 30px;
+	text-align: center;
+}
+
+.submit {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.submit button {
+  background-color: #4180f5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+	  .div{
+		  margin-left: 30px;
+	  }
+.submit button:hover {
+  background-color: #3065cc;
+}
+
+@media (max-width: 768px) {
+  .quiz {
+    flex-direction: column;
+    align-items: center;
+	  margin-left: 30px;
+  }
+}
+	  #img{
+		  margin-left: 80px;
+	  }
+
+	</style>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="logo">JUEGA Y APRENDE</div>
+      <input type="search" placeholder="Buscar...">
+    </div>
+   <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/conocepolinizadores.html">¡Conoce a los polinizadores!</a></li>
+                <li><a href="../html/experimentaencasa.html">¡Experimenta en casa!</a></li>
+                <li><a href="../html/juegayaprende.html">Juega mientras aprendes</a></li>
+                <li><a href="../html/ayudapolinizadores.html">¡Ayuda a los polinizadores!</a></li>
+                <li><a href="../html/parasabermas.html">Recursos</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <h1>Adivina el tipo de polinizador:</h1>
+
+    <form class="quiz">
+      <div class="question">
+        <img src="../img/colibri.jpg" alt="Colibrí" />
+        <label><input type="radio" name="q1" value="ave"> Ave</label><br>
+        <label><input type="radio" name="q1" value="insecto"> Insecto</label><br>
+        <label><input type="radio" name="q1" value="mamifero"> Mamífero</label>
+      </div>
+      
+   
+
+      <div class="question">
+        <img src="../img/polin.jpg" alt="Avispa" />
+        <label><input type="radio" name="q2" value="ave"> Ave</label><br>
+        <label><input type="radio" name="q2" value="insecto"> Insecto</label><br>
+        <label><input type="radio" name="q2" value="mamifero"> Mamífero</label>
+      </div>
+
+      <div class="question">
+        <img src="../img/mosca.jpg" alt="Abeja" />
+        <label><input type="radio" name="q3" value="ave"> Ave</label><br>
+        <label><input type="radio" name="q3" value="insecto"> Insecto</label><br>
+        <label><input type="radio" name="q3" value="mamifero"> Mamífero</label>
+      </div>
+
+      <div class="question">
+        <img src="../img/murcielago.jpg" alt="Murciélago" />
+        <label><input type="radio" name="q4" value="ave"> Ave</label><br>
+        <label><input type="radio" name="q4" value="insecto"> Insecto</label><br>
+        <label><input type="radio" name="q4" value="mamifero"> Mamífero</label>
+      </div>
+
+      <div class="submit">
+        <button type="submit">ENVIAR</button>
+      </div>
+    </form>
+    
+  </main>
+
+</body>
+</html>
